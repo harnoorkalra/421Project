@@ -1,0 +1,9 @@
+C:\Users\sirma\Downloads\ENGG\S2\ECE 421 - Development\Group Projects\GP 1\421Project\stock_monitor\target\debug\deps\libhyper_rustls-16f4a0da294bb8d2.rmeta: C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\lib.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\config.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\connector.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\connector\builder.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\stream.rs
+
+C:\Users\sirma\Downloads\ENGG\S2\ECE 421 - Development\Group Projects\GP 1\421Project\stock_monitor\target\debug\deps\hyper_rustls-16f4a0da294bb8d2.d: C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\lib.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\config.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\connector.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\connector\builder.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\stream.rs
+
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\lib.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\config.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\connector.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\connector\builder.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\hyper-rustls-0.24.2\src\stream.rs:
