@@ -1,0 +1,1 @@
+C:\Users\sirma\Downloads\ENGG\S2\ECE\ 421\ -\ Development\Group\ Projects\GP\ 1\421Project\stock_monitor\target\debug\stock_monitor.exe: C:\Users\sirma\Downloads\ENGG\S2\ECE\ 421\ -\ Development\Group\ Projects\GP\ 1\421Project\stock_monitor\src\main.rs

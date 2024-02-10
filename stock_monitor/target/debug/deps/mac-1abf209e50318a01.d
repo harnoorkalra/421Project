@@ -1,0 +1,12 @@
+C:\Users\sirma\Downloads\ENGG\S2\ECE 421 - Development\Group Projects\GP 1\421Project\stock_monitor\target\debug\deps\libmac-1abf209e50318a01.rmeta: C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\lib.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\test.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\mem.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\format.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\syntax_ext.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\matches.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\inspect.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\cfg.rs
+
+C:\Users\sirma\Downloads\ENGG\S2\ECE 421 - Development\Group Projects\GP 1\421Project\stock_monitor\target\debug\deps\mac-1abf209e50318a01.d: C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\lib.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\test.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\mem.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\format.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\syntax_ext.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\matches.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\inspect.rs C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\cfg.rs
+
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\lib.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\test.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\mem.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\format.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\syntax_ext.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\matches.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\inspect.rs:
+C:\Users\sirma\.cargo\registry\src\index.crates.io-6f17d22bba15001f\mac-0.1.1\src\cfg.rs:
