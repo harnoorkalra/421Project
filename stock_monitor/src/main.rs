@@ -44,9 +44,25 @@ async fn main() {
 
 async fn get_stock_quotes(queried_ticker: String) {// -> data_type {
     // Use yahoo_finance crate to return stock quotes 
-    // https://docs.rs/yahoo-finance/latest/yahoo_finance/ looks kinda old (3 years no updates). I found yahoo_finance_api which is more recent, but haven't researched
-    // Make sure to handle bad stock symbol
+    // https://docs.rs/yahoo-finance/latest/yahoo_finance/ 
+    //looks kinda old (3 years no updates). I found yahoo_finance_api which is more recent, but haven't researched
+    // TO-DO: Make sure to handle bad stock symbol
+
+    let mut highs: Vec<f64> = Vec::new();
+    let mut lows: Vec<f64> = Vec::new();
+    let mut opens: Vec<f64> = Vec::new();
+    let mut closes: Vec<f64> = Vec::new();
+    let mut datetimes: Vec<String> = Vec::new();
+
     let data = history::retrieve_interval(&queried_ticker, Interval::_6mo).await.unwrap();
+
+    for bar in &data {
+        highs.push(bar.high);
+        lows.push(bar.low);
+        opens.push(bar.open);
+        closes.push(bar.close);
+        datetimes.push(bar.datetime().to_string());
+    }
 
     for bar in &data {
         println!("Apple hit an intraday high of ${:.2} on {}.", bar.high, bar.datetime().format("%b %e %Y"));
