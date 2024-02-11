@@ -1,0 +1,11 @@
+/Users/noorkalra/Desktop/ECE421/project1/421Project/stock_monitor/target/debug/deps/libselect-b7e28ebe30d5338e.rmeta: /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/lib.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/document.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/node.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/predicate.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/selection.rs
+
+/Users/noorkalra/Desktop/ECE421/project1/421Project/stock_monitor/target/debug/deps/libselect-b7e28ebe30d5338e.rlib: /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/lib.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/document.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/node.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/predicate.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/selection.rs
+
+/Users/noorkalra/Desktop/ECE421/project1/421Project/stock_monitor/target/debug/deps/select-b7e28ebe30d5338e.d: /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/lib.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/document.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/node.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/predicate.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/selection.rs
+
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/lib.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/document.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/node.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/predicate.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/select-0.6.0/src/selection.rs:

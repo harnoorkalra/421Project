@@ -1,0 +1,11 @@
+/Users/noorkalra/Desktop/ECE421/project1/421Project/stock_monitor/target/debug/deps/libipnet-1a6e1848a702fe94.rmeta: /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/lib.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipext.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipnet.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/parser.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/mask.rs
+
+/Users/noorkalra/Desktop/ECE421/project1/421Project/stock_monitor/target/debug/deps/libipnet-1a6e1848a702fe94.rlib: /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/lib.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipext.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipnet.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/parser.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/mask.rs
+
+/Users/noorkalra/Desktop/ECE421/project1/421Project/stock_monitor/target/debug/deps/ipnet-1a6e1848a702fe94.d: /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/lib.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipext.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipnet.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/parser.rs /Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/mask.rs
+
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/lib.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipext.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/ipnet.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/parser.rs:
+/Users/noorkalra/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ipnet-2.9.0/src/mask.rs:
