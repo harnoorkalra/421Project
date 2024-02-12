@@ -1,40 +1,15 @@
 use clap::{arg, Command};
-use yahoo_finance::{history, Interval, Timestamped};
+use yahoo_finance::{history, Interval, Timestamped, Bar};
 
 #[tokio::main]
 async fn main() {
-    // To call from command line, need to navigate to stock_monitor.exe target folder and run ".\stock_monitor.exe --one words --two morewords"
-    // Using https://docs.rs/clap/latest/clap/_tutorial/chapter_1/index.html as reference
-    // TODO: adjust to single argument, implement --help, maybe functionalize this input stuff
-    
-    let cmdline = false;
-    if cmdline {
-        let matches = Command::new("Stock Market Monitor")
-            .version("1.0")
-            .about("Fill description later")
-            .arg(arg!(--two <VALUE>).required(true))
-            .arg(arg!(--one <VALUE>).required(true))
-            .get_matches();
-
-        println!(
-            "two: {:?}",
-            matches.get_one::<String>("two").expect("required")
-        );
-        println!(
-            "one: {:?}",
-            matches.get_one::<String>("one").expect("required")
-        );
-
-        
-        let ticker = matches.get_one::<String>("one").expect("required");
-
-        println!("Inputted ticker: {}", ticker);
-    }
+    // To call from command line, need to navigate to stock_monitor.exe in target\debug folder and run ".\stock_monitor.exe --ticker AAPL"
+    let ticker = get_ticker_from_command_line();    
 
     // TODO
     //let retrieved_stuff = get_stock_quotes(ticker.to_string());
     //not returning anything yet. only printing from the function directly.
-    get_stock_quotes("AAPL".to_string()).await;
+    get_stock_quotes(ticker.to_string()).await;
 
 
     // TODO
@@ -42,11 +17,23 @@ async fn main() {
     plot_function();
 }
 
-async fn get_stock_quotes(queried_ticker: String) {// -> data_type {
+fn get_ticker_from_command_line() -> String {
+    let matches = Command::new("Stock Market Monitor")
+    .version("1.0")
+    .about("Takes a stock symbol as input and outputs a chart showing the daily closing price for the last six months")
+    .arg(arg!(--ticker <VALUE>).required(true).help("The desired stock ticker symbol to be analyzed and graphed. Ex: AAPL"))
+    .get_matches();
+
+    let ticker_arg: &String = matches.get_one::<String>("ticker").expect("required");
+
+    println!("Inputted ticker: {:?}", ticker_arg);
+
+    return ticker_arg.to_string();
+}
+
+async fn get_stock_quotes(queried_ticker: String) -> Result<Vec<Bar>, Box<dyn std::error::Error>>{// -> data_type {
     // Use yahoo_finance crate to return stock quotes 
     // https://docs.rs/yahoo-finance/latest/yahoo_finance/ 
-    //looks kinda old (3 years no updates). I found yahoo_finance_api which is more recent, but haven't researched
-    // TO-DO: Make sure to handle bad stock symbol
 
     let mut highs: Vec<f64> = Vec::new();
     let mut lows: Vec<f64> = Vec::new();
@@ -54,7 +41,15 @@ async fn get_stock_quotes(queried_ticker: String) {// -> data_type {
     let mut closes: Vec<f64> = Vec::new();
     let mut datetimes: Vec<String> = Vec::new();
 
-    let data = history::retrieve_interval(&queried_ticker, Interval::_6mo).await.unwrap();
+    //let data = history::retrieve_interval(&queried_ticker, Interval::_6mo).await.unwrap();
+    // Attempt to retrieve stock quotes for the given ticker symbol
+    let data = match history::retrieve_interval(&queried_ticker, Interval::_6mo).await {
+        Ok(data) => data,
+        Err(err) => {
+            eprintln!("Could not retrieve desired {} stock quotes from Yahoo", queried_ticker);
+            return Err(Box::new(err));
+        }
+    };
 
     for bar in &data {
         highs.push(bar.high);
@@ -67,6 +62,8 @@ async fn get_stock_quotes(queried_ticker: String) {// -> data_type {
     for bar in &data {
         println!("Apple hit an intraday high of ${:.2} on {}.", bar.high, bar.datetime().format("%b %e %Y"));
     }
+
+    Ok(data)
 }
 
 fn plot_function(){// stock_data: data_type){
