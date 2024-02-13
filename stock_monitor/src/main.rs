@@ -59,6 +59,7 @@ async fn get_stock_quotes(queried_ticker: String) -> Result<Vec<Bar>, Box<dyn st
         datetimes.push(bar.datetime().to_string());
     }
 
+    // TODO: make "Apple" dynamic with the stock being plotted, should be generic
     for bar in &data {
         println!("Apple hit an intraday high of ${:.2} on {}.", bar.high, bar.datetime().format("%b %e %Y"));
     }
