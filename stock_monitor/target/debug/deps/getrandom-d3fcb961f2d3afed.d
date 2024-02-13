@@ -1,0 +1,11 @@
+/Users/ajayd/Desktop/ECE 421/project/421Project/stock_monitor/target/debug/deps/libgetrandom-d3fcb961f2d3afed.rmeta: /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/lib.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/error.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util_libc.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/macos.rs
+
+/Users/ajayd/Desktop/ECE 421/project/421Project/stock_monitor/target/debug/deps/libgetrandom-d3fcb961f2d3afed.rlib: /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/lib.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/error.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util_libc.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/macos.rs
+
+/Users/ajayd/Desktop/ECE 421/project/421Project/stock_monitor/target/debug/deps/getrandom-d3fcb961f2d3afed.d: /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/lib.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/error.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util_libc.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/macos.rs
+
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/lib.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/error.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/util_libc.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/getrandom-0.2.12/src/macos.rs:

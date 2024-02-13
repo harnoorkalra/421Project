@@ -1,0 +1,11 @@
+/Users/ajayd/Desktop/ECE 421/project/421Project/stock_monitor/target/debug/deps/libmio_uds-b98f57a3398d94d2.rmeta: /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs
+
+/Users/ajayd/Desktop/ECE 421/project/421Project/stock_monitor/target/debug/deps/libmio_uds-b98f57a3398d94d2.rlib: /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs
+
+/Users/ajayd/Desktop/ECE 421/project/421Project/stock_monitor/target/debug/deps/mio_uds-b98f57a3398d94d2.d: /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs /Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs
+
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/lib.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/datagram.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/listener.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/socket.rs:
+/Users/ajayd/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mio-uds-0.6.8/src/stream.rs:
