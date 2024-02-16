@@ -20,7 +20,7 @@ tokio = "0.2.1"
 2. Financial analysis algorithm
 The financial analysis algorithm we used for the default 'volatile' days analysis. The algorithm identifies when a day's stock price varied by more than 2% of the total price (as measured by the difference between the intra-day high and low). The purpose of this identification is to help an analyst predict when periods of high volatility will occur, as those will hold the possibility for greater losses and gains.
 
-3. <charting setup>
+3. The plot_function method, as described in the README, is used to plot the required data onto a chart using the plotters crate. This function highlights the volatile days and prints the min/max stock price days. It's part of the project's functionality to visualize stock price movements, particularly focusing on days with high volatility. The method takes sorted data structures, which contain historical stock price data, and uses them to generate a visual representation. This helps in identifying patterns or trends in the stock's performance over a specified period, especially the days when the stock price had significant fluctuations.
 
 4. Project setup - The main function starts by calling the function get_ticker_from_command_line() to obtain ticker as user input to be used for stock analysis which uses the clap crate yo parse command line arguments.
 Based on the user input, main function then calls the get_stock_quotes with the ticker as a parameter. It uses the yahoo-finance crate to obtain historical data of the given ticker and sort the obtained data into different vectors.
