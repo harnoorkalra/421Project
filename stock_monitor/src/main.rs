@@ -7,7 +7,7 @@ async fn main() {
     let ticker = get_ticker_from_command_line();    
 
     if let Ok(stock_data) = get_stock_quotes(ticker.to_string()).await {
-        match plot_function(stock_data) {
+        match plot_function(stock_data, &ticker) {
             Ok(_) => println!("Plot generated successfully."),
             Err(e) => eprintln!("Failed to generate plot: {}", e),
         }
@@ -59,10 +59,6 @@ async fn get_stock_quotes(queried_ticker: String) -> Result<Vec<Bar>, Box<dyn st
         datetimes.push(bar.datetime().to_string());
     }
 
-    // TODO: make "Apple" dynamic with the stock being plotted, should be generic
-    for bar in &data {
-        println!("Apple hit an intraday high of ${:.2} on {}.", bar.high, bar.datetime().format("%b %e %Y"));
-    }
 
     Ok(data)
 }
@@ -77,10 +73,9 @@ async fn get_stock_quotes(queried_ticker: String) -> Result<Vec<Bar>, Box<dyn st
     // Finally, the program will print the minimum and maximum closing price for the interval, and the dates on which these values occurred.
     // Separate function?
 
-    fn plot_function(stock_data: Vec<Bar>) -> Result<(), Box<dyn std::error::Error>> {
-        // Define the path to the output image
+    // Updated plot_function signature to include ticker
+    fn plot_function(stock_data: Vec<Bar>, ticker: &str) -> Result<(), Box<dyn std::error::Error>> {
         let root_area = BitMapBackend::new("stock_chart.png", (1280, 720)).into_drawing_area();
-        
         root_area.fill(&WHITE)?;
 
         let min_date = stock_data.first().unwrap().datetime();
@@ -88,21 +83,22 @@ async fn get_stock_quotes(queried_ticker: String) -> Result<Vec<Bar>, Box<dyn st
         let max_price = stock_data.iter().map(|x| x.high).fold(0./0., f64::max);
         let min_price = stock_data.iter().map(|x| x.low).fold(0./0., f64::min);
 
+        // Updated caption to include ticker
+        let caption = format!("{} Stock Price Over Last Six Months", ticker);
+
         let mut chart = ChartBuilder::on(&root_area)
-            .caption("Stock Price Over Last Six Months", ("sans-serif", 50).into_font())
+            .caption(caption, ("sans-serif", 50).into_font())
             .set_label_area_size(LabelAreaPosition::Left, 40)
             .set_label_area_size(LabelAreaPosition::Bottom, 40)
             .build_cartesian_2d(min_date..max_date, min_price..max_price)?;
 
         chart.configure_mesh().draw()?;
 
-        // Plotting the closing prices
         chart.draw_series(LineSeries::new(
             stock_data.iter().map(|bar| (bar.datetime(), bar.close)),
             &RED,
         ))?;
 
-        // Highlighting volatile days
         for bar in stock_data.iter().filter(|bar| (bar.high - bar.low) / bar.close > 0.02) {
             chart.draw_series(PointSeries::of_element(
                 [(bar.datetime(), bar.close)],
