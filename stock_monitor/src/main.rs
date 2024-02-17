@@ -81,9 +81,9 @@ fn find_max_min_dates(stock_data: &[Bar]) {
 
 // Function to plot the stock price data
 fn plot_function(stock_data: Vec<Bar>, ticker: &str) -> Result<(), Box<dyn std::error::Error>> {
-    // Create a bitmap backend with dimensions 1280x720 and fill it with white color
-    let root_area = BitMapBackend::new("stock_chart.png", (1280, 720)).into_drawing_area();
-    root_area.fill(&WHITE)?;
+    // Initialize HTML back-end
+    let root_area = SVGBackend::new("stock_chart.html", (1280, 720)).into_drawing_area();
+    root_area.fill(&WHITE).unwrap();
 
     // Determine the minimum and maximum dates from the stock data for the x-axis bounds
     let min_date = stock_data.first().unwrap().datetime();
@@ -134,5 +134,6 @@ fn plot_function(stock_data: Vec<Bar>, ticker: &str) -> Result<(), Box<dyn std::
             .map(|(start, end, color)| PathElement::new(vec![*start, *end], color)), // Create a path element for the error bar
         )?;
     }
+
     Ok(())
 }

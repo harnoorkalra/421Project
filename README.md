@@ -22,7 +22,7 @@ chrono = "0.4.34"
 The financial analysis algorithm we used for the default 'volatile' days analysis. The algorithm identifies when a day's stock price varied by more than 2% of the total price (as measured by the difference between the intra-day high and low). The purpose of this identification is to help an analyst predict when periods of high volatility will occur, as those will hold the possibility for greater losses and gains.
 
 3. Charting setup  
-The plot_function method, as described in the README, is used to plot the required data onto a chart using the plotters crate. This function highlights the volatile days and prints the min/max stock price days. It's part of the project's functionality to visualize stock price movements, particularly focusing on days with high volatility. The method takes sorted data structures, which contain historical stock price data, and uses them to generate a visual representation. This helps in identifying patterns or trends in the stock's performance over a specified period, especially the days when the stock price had significant fluctuations.
+The plot_function method, as described below in the README, is used to plot the required data onto a chart using the plotters crate. This function highlights the volatile days and prints the min/max stock price days. It's part of the project's functionality to visualize stock price movements, particularly focusing on days with high volatility. The method takes sorted data structures, which contain historical stock price data, and uses them to generate a visual representation with stock price on the y-axis and date on the x-axis. This helps in identifying patterns or trends in the stock's performance over a specified period, especially the days when the stock price had significant fluctuations, each of which are identified by a blue point, with bars showing the max and min price.
 
 4. Project setup  
 The main function starts by calling the function get_ticker_from_command_line() to obtain ticker as user input to be used for stock analysis which uses the clap crate to parse command line arguments.
@@ -33,4 +33,4 @@ Once the sorted data structures are returned, the main function then calls the p
 Assuming the stock_monitor folder has been downloaded, the package must be built using Cargo. Navigate to the folder in the terminal, and enter 'cargo build'. This will download the dependencies, as listed in Cargo.toml, and prepare the package to be run. Upon completion of the build, the program can be run in two ways.
 - Navigate to the target/debug folder and run stock_monitor.exe with the desired ticker. For example './stock_monitor --ticker AAPL'
 - While in the stock_monitor folder in the terminal, use cargo run with the desired ticker. For example 'cargo run -- --ticker AAPL'
-The resulting chart can be viewed in stock_chart.png.
+The resulting chart can be viewed in stock_chart.html.
