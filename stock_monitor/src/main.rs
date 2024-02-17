@@ -113,14 +113,26 @@ fn plot_function(stock_data: Vec<Bar>, ticker: &str) -> Result<(), Box<dyn std::
 
     // Draw point series for bars where the price variation is greater than 2%
     for bar in stock_data.iter().filter(|bar| (bar.high - bar.low) / bar.close > 0.02) {
+        // Draw the point at the closing price
         chart.draw_series(PointSeries::of_element(
-            [(bar.datetime(), bar.close)],
-            5,
-            &BLUE,
+            [(bar.datetime(), bar.close)], // Coordinates of the point
+            5, // Size of the point
+            &BLUE, 
             &|coord, size, style| {
-                EmptyElement::at(coord) + Circle::new((0, 0), size, style.filled())
+                EmptyElement::at(coord) + Circle::new((0, 0), size, style.filled()) // Draw a filled circle at the point
             },
         ))?;
+
+        // Draw the error bars indicating the range between the minimum and maximum prices
+        chart.draw_series(
+            vec![(
+                (bar.datetime(), bar.low), // Starting point of the error bar
+                (bar.datetime(), bar.high), // Ending point of the error bar
+                &BLUE, 
+            )]
+            .iter()
+            .map(|(start, end, color)| PathElement::new(vec![*start, *end], color)), // Create a path element for the error bar
+        )?;
     }
     Ok(())
 }
